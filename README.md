@@ -1,4 +1,6 @@
-<img align="center" src="https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-game.png" alt="HangmanIcon">
+<p align="center">
+  <img width="200" height="200" src="https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-game.png" alt="HangmanIcon">
+</p>
 
 # Hangman - The Game
 
