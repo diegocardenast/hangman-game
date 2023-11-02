@@ -1,8 +1,8 @@
-![Hangman image](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-game.png)
+<img align="center" src="https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-game.png" alt="HangmanIcon">
 
 # Hangman - The Game
 
-Hangman is a game where the user needs to save the hang person by finding the correct word. The player has 6 opportunities, and if the player does not find out the answer, then the player will lose the game. For every wrongly guessed word, a life or trial in the game is lost and a “hanging-man” begins to appear, piece by piece. The aim is to solve the puzzle and guess the correct word(s)/phrase before the hangman dies.
+Hangman is a game where the player needs to save the person to be hanged by finding the correct word. The player has a certain amount of opportunities, and if the player does not find out the answer, then the player will lose the game. For every wrongly guessed word, a life or trial in the game is lost and a “hanging-man” begins to appear, piece by piece. The aim is to solve the puzzle and guess the correct word(s)/phrase before the hangman dies.
 
 --- 
 
@@ -11,12 +11,9 @@ Hangman is a game where the user needs to save the hang person by finding the co
 - As a **user** I want to **understand the game rules** so that I can **play the game correctly**
 - As a **user** I want to **have the options menu available** so that I can **restart the game anytime**
 - As a **user** I want to **select the level of difficulty** so that I can **challenge myself with shorter or larger words**
-
-A player takes an initial guess at a letter that might start or be contained in the word or list of words.
-If the letter is contained in the word/list of words, the player gains a point and takes another turn guessing a letter.
-If the letter is not contained in the word, the player losses a try(tries)/point, and a part of the hangman appears.
-For every wrongly guessed letter, the hangman appears bit by bit until the complete image is drawn.
-Similarly, for every correctly guessed letter, the letters are placed on the screen until the word is completed and the player wins.
+- As a **user** I want to **be able to guess a letter from the game word** so that I can **try several times before it is game over**
+- As a **user** I want to **be able to watch the letters that were selected** so that I can **avoid repeating letters**
+- As a **user** I want to **be able to watch the hangman image and the number of left tries** so that I can **be more cautious with the following letters selection**
 
 --- 
 
