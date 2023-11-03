@@ -72,8 +72,11 @@ __Hangman image__
 
 ### Validator Testing 
 - Python
-  - No errors were returned when passing through the official [pep8ci validator](https://pep8ci.herokuapp.com/)
+  - No errors were returned when passing through the official [pep8ci validator](https://pep8ci.herokuapp.com/)  
 
+<p align="center">
+  <img src="https://github.com/diegocardenast/hangman-game/blob/main/assets/images/code-pep8ci-validation.png" alt="code-pep8ci-validation">
+</p>
 
 ### Manual Testing
 
@@ -91,10 +94,21 @@ Input - User name - Valid data	| Entered in : characters in scope | app proceeds
 
 ## Deployment 
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+- The game code is stored in a GitHub repository and was deployed in the Heroku app. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+  When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+
+1. `heroku/python`
+2. `heroku/nodejs`
+
+You must then create a _Config Var_ called `PORT`. Set this to `8000`
+
+If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+
+Connect your GitHub repository and deploy as normal.
 
 The live link can be found [HERE]( )
 
