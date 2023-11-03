@@ -20,12 +20,18 @@ Hangman is a game where the player needs to save the person to be hanged by find
 --- 
 
 ## Flowchart
+<p align="center">
+  <img src="https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-game-flowchart.png" alt="Hangman-flowchart">
+</p>
 
-![Hangman flowchart](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/)
+  - Online version of the game flowchart can be found inside [Lucidchart (click here)](https://lucid.app/lucidchart/34de17b9-709a-49c4-8d79-44810d102faf/edit?viewport_loc=-776%2C-16%2C3245%2C1531%2C0_0&invitationId=inv_5ed7c721-b21a-4564-a0eb-f4a495f0d7b6)
 
 --- 
 
 ## Features
+
+### Am I Responsive View
+![AmIResponsiveView](https://github.com/diegocardenast/)
 
 ### Implemented Features
 
@@ -39,7 +45,7 @@ __In-game Options__
 
   - You might have always the possibility to change difficulty level or restart the game. 
 
-![inGameOptions](https://github.com/diegocardenast/)
+![InGameOptions](https://github.com/diegocardenast/)
 
 __Instructions__
 
@@ -66,7 +72,7 @@ __Hangman image__
 
 ### Validator Testing 
 - Python
-  - No errors were returned when passing through the official [Python validator]( )
+  - No errors were returned when passing through the official [pep8ci validator](https://pep8ci.herokuapp.com/)
 
 
 ### Manual Testing
@@ -105,6 +111,7 @@ The live link can be found [HERE]( )
 - Inspirational tutorial and use of code created by Aminah Mardiyyah Rufai and published in [medium.com](https://mardiyyah.medium.com/a-simple-hangman-learnpythonthroughprojects-series-10-fedda58741b)
 - Inspirational tutorial and use of code created by SAI ASHISH KONCHADA and published in [makeuseof.com](https://www.makeuseof.com/python-game-hangman-create/)
 - Filtering wordlist depending on diffculty level created by Komal Gupta and published in [favtutor.com](https://favtutor.com/blogs/filter-list-python)
+- System exit article created by Shittu Olumide and published in [freecodecamp.org](https://www.freecodecamp.org/news/python-exit-how-to-use-an-exit-function-in-python-to-stop-a-program/)
 
 
 ### Media
