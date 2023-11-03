@@ -18,7 +18,7 @@ def select_difficulty():
     Allows the player to select the difficulty level
     """
     while True:
-        choice = input("Please select difficulty level (easy/medium/hard) or 'instructions' for instructions:\n")
+        choice = input("Select easy/medium/hard level or 'instructions':\n")
 
         if 'easy' in choice.lower():
             print("You selected easy")
@@ -162,11 +162,11 @@ def run_game(word):
         print(temp, end='')
         print(f"\t(word has {len(word)} letters)")
         print(f"Chances left: {chances}")
-        character = input("Enter a letter ('restart' to start again or 'instructions' for instructions):\n")
+        character = input("Enter a letter ('restart' or 'instructions'):\n")
         if len(character) > 1 or not character.isalpha():
             if (character == "restart"):
                 start_game()
-            elif(character == "instructions"):
+            elif (character == "instructions"):
                 check_instructions()
                 continue
             else:
@@ -208,12 +208,14 @@ def check_instructions():
     """
     os.system('clear')
     print("INSTRUCTIONS:")
-    print("- The goal of the game is to guess the mysterious word before the man is hanged.")
-    print("- Select one of the 3 difficulty levels (easy, medium or hard). The difference is the lenght of the words.")
+    print("- The goal of the game is to guess the mysterious word")
+    print("before the man is hanged.")
+    print("- Select one of the 3 difficulty levels (easy, medium or hard).")
+    print("The difference is the lenght of the words.")
     print("- You can guess only one letter at a time.")
     print("- You have 7 opportunities to make mistakes.")
     print("- If you guess the word, you will win and save the man.")
-    print("- You can anytime restart the game by typing 'restart' in the console.")
+    print("- You can anytime restart the game typing 'restart'")
     print("- Only one letter is accepted per try.\n")
 
 
