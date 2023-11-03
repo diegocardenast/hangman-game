@@ -18,7 +18,7 @@ def select_difficulty():
     Allows the player to select the difficulty level
     """
     while True:
-        choice = input("Please select difficulty level (easy/medium/hard):\n")
+        choice = input("Please select difficulty level (easy/medium/hard) or 'instructions' for instructions:\n")
 
         if 'easy' in choice.lower():
             print("You selected easy")
@@ -37,7 +37,9 @@ def select_difficulty():
             print("\n")
             level = 'hard'
             get_word_from_list(level)
-
+        elif 'instructions' in choice.lower():
+            check_instructions()
+            continue
         else:
             print("Please enter a valid choice.")
             print("\n")
@@ -160,10 +162,13 @@ def run_game(word):
         print(temp, end='')
         print(f"\t(word has {len(word)} letters)")
         print(f"Chances left: {chances}")
-        character = input("Enter a letter (or 'restart' to start again):\n")
+        character = input("Enter a letter ('restart' to start again or 'instructions' for instructions):\n")
         if len(character) > 1 or not character.isalpha():
             if (character == "restart"):
                 start_game()
+            elif(character == "instructions"):
+                check_instructions()
+                continue
             else:
                 os.system('clear')
                 print("Enter a single letter only or 'restart' to start again")
@@ -195,6 +200,21 @@ def run_game(word):
         else:
             draw_hangman(chances)
         print()
+
+
+def check_instructions():
+    """
+    Game Instructions
+    """
+    os.system('clear')
+    print("INSTRUCTIONS:")
+    print("- The goal of the game is to guess the mysterious word before the man is hanged.")
+    print("- Select one of the 3 difficulty levels (easy, medium or hard). The difference is the lenght of the words.")
+    print("- You can guess only one letter at a time.")
+    print("- You have 7 opportunities to make mistakes.")
+    print("- If you guess the word, you will win and save the man.")
+    print("- You can anytime restart the game by typing 'restart' in the console.")
+    print("- Only one letter is accepted per try.\n")
 
 
 def get_some_letters(word):
