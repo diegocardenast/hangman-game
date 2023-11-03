@@ -18,7 +18,7 @@ def select_difficulty():
     Allows the player to select the difficulty level
     """
     while True:
-        choice = input("Please select difficulty level (easy/medium/hard): ")
+        choice = input("Please select difficulty level (easy/medium/hard):\n")
 
         if 'easy' in choice.lower():
             print("You selected easy")
@@ -144,7 +144,7 @@ def run_game(word):
     while True:
         if chances == 0:
             print(f"Game Over! The word was: {word}")
-            gameOver_choice = input("Do you want to play again? (yes/no): ")
+            gameOver_choice = input("Do you want to play again? (yes/no):\n")
             while True:
                 if 'yes' in gameOver_choice.lower():
                     start_game()
@@ -160,7 +160,7 @@ def run_game(word):
         print(temp, end='')
         print(f"\t(word has {len(word)} letters)")
         print(f"Chances left: {chances}")
-        character = input("Enter a letter (or 'restart' to start again): ")
+        character = input("Enter a letter (or 'restart' to start again):\n")
         if len(character) > 1 or not character.isalpha():
             if (character == "restart"):
                 start_game()
@@ -181,7 +181,7 @@ def run_game(word):
             chances -= 1
         if '_' not in temp:
             print(f"\nYou Won! The word was: {word}")
-            gameWon_choice = input("Do you want to play again? (yes/no): ")
+            gameWon_choice = input("Do you want to play again? (yes/no):\n")
             while True:
                 if 'yes' in gameWon_choice.lower():
                     start_game()
