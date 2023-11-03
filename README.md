@@ -111,6 +111,7 @@ The live link can be found [HERE]( )
 
 - The icons along the web app were taken from [Font Awesome](https://fontawesome.com/)
 - The use of the intro icons was provided by [Flaticon](https://www.flaticon.com/free-icons/hangman)
+- The wordslist was taken from SAI ASHISH KONCHADA [GitHub repository](https://github.com/makeuseofcode/Hangman-Game/blob/main/hangman_wordlist.txt)
 
 
 Thank You!
