@@ -1,10 +1,11 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-import random
+import random, sys, os
 
 def start_game():
     """
     Game introductory message
     """
+    os.system('clear')
     print("===== Welcome to the Hangman Game =====\n")
     select_difficulty()
 
@@ -64,6 +65,7 @@ def draw_hangman(chances):
     It shows the image of the hangman depending on how many chances the player has left
     """
     if chances == 6:
+        os.system('clear')
         print(" ________      ")
         print(" |      |      ")
         print(" |             ")
@@ -72,6 +74,7 @@ def draw_hangman(chances):
         print(" |             ")
         print("¯¯¯¯¯          ")
     elif chances == 5:
+        os.system('clear')
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
@@ -80,6 +83,7 @@ def draw_hangman(chances):
         print(" |             ")
         print("¯¯¯¯¯          ")
     elif chances == 4:
+        os.system('clear')
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
@@ -88,6 +92,7 @@ def draw_hangman(chances):
         print(" |             ")
         print("¯¯¯¯¯          ")
     elif chances == 3:
+        os.system('clear')
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
@@ -96,6 +101,7 @@ def draw_hangman(chances):
         print(" |             ")
         print("¯¯¯¯¯          ")
     elif chances == 2:
+        os.system('clear')
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
@@ -104,6 +110,7 @@ def draw_hangman(chances):
         print(" |             ")
         print("¯¯¯¯¯          ")
     elif chances == 1:
+        os.system('clear')
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
@@ -112,6 +119,7 @@ def draw_hangman(chances):
         print(" |             ")
         print("¯¯¯¯¯          ")
     elif chances == 0:
+        os.system('clear')
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
@@ -132,18 +140,19 @@ def run_game(word):
     while True:
         if chances == 0:
             print(f"Game Over! The word was: {word}")
-            gameOver_choice = input("Do you want to try again? (yes/no): ")
+            gameOver_choice = input("Do you want to play again? (yes/no): ")
             while True:
                 if 'yes' in gameOver_choice.lower():
                     start_game()
                 elif 'no' in gameOver_choice.lower():
                     print('Quitting the game...')
-                    break
+                    sys.exit()
                 else:
+                    os.system('clear')
                     print("Please enter a valid choice.")
                     print("\n")
 
-        print("=== Guess the word ===")
+        print("==== Guess the word ====")
         print(temp, end='')
         print(f"\t(word has {len(word)} letters)")
         print(f"Chances left: {chances}")
@@ -152,6 +161,7 @@ def run_game(word):
             if(character == "restart"):
                 start_game()
             else:
+                os.system('clear')
                 print("Please enter a single alphabet only or 'restart' to start again")
                 continue
         else:
@@ -173,8 +183,9 @@ def run_game(word):
                     start_game()
                 elif 'no' in gameWon_choice.lower():
                     print('Quitting the game...')
-                    break
+                    sys.exit()
                 else:
+                    os.system('clear')
                     print("Please enter a valid choice.")
                     print("\n")
         else:
