@@ -1,5 +1,8 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-import random, sys, os
+import random
+import sys
+import os
+
 
 def start_game():
     """
@@ -15,26 +18,26 @@ def select_difficulty():
     Allows the player to select the difficulty level
     """
     while True:
-        choice = input("Please select the difficulty level (easy/medium/hard): ")
-        
+        choice = input("Please select difficulty level (easy/medium/hard): ")
+
         if 'easy' in choice.lower():
             print("You selected easy")
             print("\n")
             level = 'easy'
             get_word_from_list(level)
-            
+
         elif 'medium' in choice.lower():
             print("You selected medium")
             print("\n")
             level = 'medium'
             get_word_from_list(level)
-            
+
         elif 'hard' in choice.lower():
             print("You selected hard")
             print("\n")
             level = 'hard'
             get_word_from_list(level)
-              
+
         else:
             print("Please enter a valid choice.")
             print("\n")
@@ -49,11 +52,11 @@ def get_word_from_list(level):
         wordlist = file.read().split('\n')
 
         if level == 'easy':
-            filtered_list = [ i for i in wordlist if len(i)<= 5]
+            filtered_list = [i for i in wordlist if len(i) <= 5]
         elif level == 'medium':
-            filtered_list = [ i for i in wordlist if len(i)> 5 & len(i)<= 10]
+            filtered_list = [i for i in wordlist if len(i) > 5 & len(i) <= 10]
         elif level == 'hard':
-            filtered_list = [ i for i in wordlist if len(i)> 10]
+            filtered_list = [i for i in wordlist if len(i) > 10]
 
     word = random.choice(filtered_list)
     run_game(word)
@@ -61,8 +64,9 @@ def get_word_from_list(level):
 
 def draw_hangman(chances):
     """
-    Inspired by https://github.com/makeuseofcode/Hangman-Game/blob/main/hangman.py
-    It shows the image of the hangman depending on how many chances the player has left
+    Inspired by
+    https://github.com/makeuseofcode/Hangman-Game/blob/main/hangman.py
+    It shows the hangman depending on how many chances the player has left
     """
     if chances == 6:
         os.system('clear')
@@ -105,7 +109,7 @@ def draw_hangman(chances):
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
-        print(" |     /|\     ")
+        print(" |     /|\\    ")
         print(" |             ")
         print(" |             ")
         print("¯¯¯¯¯          ")
@@ -114,7 +118,7 @@ def draw_hangman(chances):
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
-        print(" |     /|\     ")
+        print(" |     /|\\    ")
         print(" |     /       ")
         print(" |             ")
         print("¯¯¯¯¯          ")
@@ -123,8 +127,8 @@ def draw_hangman(chances):
         print(" ________      ")
         print(" |      |      ")
         print(" |      0      ")
-        print(" |     /|\     ")
-        print(" |     / \     ")
+        print(" |     /|\\    ")
+        print(" |     / \\    ")
         print(" |             ")
         print("¯¯¯¯¯          ")
 
@@ -132,7 +136,7 @@ def draw_hangman(chances):
 def run_game(word):
     """
     Takes the randomly selected word according to difficulty level
-    and use it in a loop where the player can try to find the solution 
+    and use it in a loop where the player can try to find the solution
     """
     temp = get_some_letters(word)
     chances = 7
@@ -156,13 +160,13 @@ def run_game(word):
         print(temp, end='')
         print(f"\t(word has {len(word)} letters)")
         print(f"Chances left: {chances}")
-        character = input("Enter the character you think the word may have (or 'restart' to start again): ")
+        character = input("Enter a letter (or 'restart' to start again): ")
         if len(character) > 1 or not character.isalpha():
-            if(character == "restart"):
+            if (character == "restart"):
                 start_game()
             else:
                 os.system('clear')
-                print("Please enter a single alphabet only or 'restart' to start again")
+                print("Enter a single letter only or 'restart' to start again")
                 continue
         else:
             for num, char in enumerate(list(word)):
@@ -195,8 +199,10 @@ def run_game(word):
 
 def get_some_letters(word):
     """
-    Inspired by https://github.com/makeuseofcode/Hangman-Game/blob/main/hangman.py
-    It takes the selected word for the game and converts it into a set of '_' marks
+    Inspired by
+    https://github.com/makeuseofcode/Hangman-Game/blob/main/hangman.py
+    It takes the selected word for the game and converts it into a
+    set of '_' marks
     """
     letters = []
     temp = '_'*len(word)
@@ -210,5 +216,6 @@ def get_some_letters(word):
             templist[num] = char
             temp = ''.join(templist)
     return temp
+
 
 start_game()
