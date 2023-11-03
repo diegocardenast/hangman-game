@@ -152,7 +152,7 @@ def run_game(word):
             if(character == "restart"):
                 start_game()
             else:
-                print("Please enter a single alphabet only or 'restart' start again")
+                print("Please enter a single alphabet only or 'restart' to start again")
                 continue
         else:
             for num, char in enumerate(list(word)):
@@ -167,7 +167,6 @@ def run_game(word):
             chances -= 1
         if '_' not in temp:
             print(f"\nYou Won! The word was: {word}")
-            print(f"You got it in {7 - chances} guess")
             gameWon_choice = input("Do you want to play again? (yes/no): ")
             while True:
                 if 'yes' in gameWon_choice.lower():
