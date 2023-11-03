@@ -104,6 +104,7 @@ The live link can be found [HERE]( )
 - Use of [Lucidchart](https://lucid.app/lucidchart/34de17b9-709a-49c4-8d79-44810d102faf/edit?viewport_loc=-854%2C-32%2C3328%2C1570%2C0_0&invitationId=inv_5ed7c721-b21a-4564-a0eb-f4a495f0d7b6) to create the game flowchart
 - Inspirational tutorial and use of code created by Aminah Mardiyyah Rufai and published in [medium.com](https://mardiyyah.medium.com/a-simple-hangman-learnpythonthroughprojects-series-10-fedda58741b)
 - Inspirational tutorial and use of code created by SAI ASHISH KONCHADA and published in [makeuseof.com](https://www.makeuseof.com/python-game-hangman-create/)
+- Filtering wordlist depending on diffculty level created by Komal Gupta and published in [favtutor.com](https://favtutor.com/blogs/filter-list-python)
 
 
 ### Media
