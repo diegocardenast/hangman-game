@@ -31,7 +31,10 @@ Hangman is a game where the player needs to save the person to be hanged by find
 ## Features
 
 ### Am I Responsive View
-![AmIResponsiveView](https://github.com/diegocardenast/)
+
+<p align="center">
+  <img src="https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-game-am-i-responsive.png" alt="hangman-game-am-i-responsive">
+</p>
 
 ### Implemented Features
 
@@ -39,28 +42,36 @@ __Index__
 
   - Initial area of the game. 
 
-![Index](https://github.com/diegocardenast/)
+![Index](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/index-feature.png)
 
 __In-game Options__
 
   - You might have always the possibility to change difficulty level or restart the game. 
 
-![InGameOptions](https://github.com/diegocardenast/)
+![InGameOptions](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/in-game-options-feature.png)
 
 __Instructions__
 
   - Instructions of the game
-![Instructions](https://github.com/diegocardenast/)
+![Instructions](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/instructions-feature.png)
+  - Instructions text:
+    - The goal of the game is to guess the mysterious word before the man is hanged.
+    - Select one of the 3 difficulty levels (easy, medium or hard). The difference is the lenght of the words.
+    - You can guess only one letter at a time.
+    - You have 7 opportunities to make mistakes.
+    - If you guess the word, you will win and save the man.
+    - You can anytime restart the game by typing 'restart' in the console.
+    - Only one letter is accepted per try.
 
 __Difficulty selection__
 
   - The player can select among 3 levels of difficulty, which will make the words longer and harder to guess
-![Difficulty](https://github.com/diegocardenast/)
+![Difficulty](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/difficulty-selection-feature.png)
 
 __Hangman image__
 
   - The player will know how many tries he has left if a mistake is made.
-![HangmanImage](https://github.com/diegocardenast/)
+![HangmanImage](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-image-feature.png)
 
 
 ### Features Left to Implement
