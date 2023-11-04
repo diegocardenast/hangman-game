@@ -56,7 +56,7 @@ __Instructions__
 ![Instructions](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/instructions-feature.png)
   - Instructions text:
     - The goal of the game is to guess the mysterious word before the man is hanged.
-    - Select one of the 3 difficulty levels (easy, medium or hard). The difference is the lenght of the words.
+    - Write one of the 3 difficulty levels (easy, medium or hard). The difference is the lenght of the words.
     - You can guess only one letter at a time.
     - You have 7 opportunities to make mistakes.
     - If you guess the word, you will win and save the man.
@@ -72,6 +72,11 @@ __Hangman image__
 
   - The player will know how many tries he has left if a mistake is made.
 ![HangmanImage](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-image-feature.png)
+
+__Color change in Hangman image__
+
+  -Using colours (thanks to the Colorama tool), the player will know how many tries he has left and if he is getting close to die by the change of colours in the hangman.
+![HangmanColours](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-color-feature.png)
 
 
 ### Features Left to Implement
@@ -93,8 +98,13 @@ __Hangman image__
 
 **TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
 ----------|----------|----------|----------
-Input - User name - Invalid data	| Entered in : blank space, return key, symbols, numbers	| app informs user of invalid data & prompts the user to try again | Works as expected
-Input - User name - Valid data	| Entered in : characters in scope | app proceeds to next function | Works as expected 
+Input - Game level - Invalid data	| Entered in : blank space, return key, symbols, numbers	| app informs user of invalid data & prompts the user to try again | Works as expected
+Input - Game level - valid data	| Entered in : upper case, lower case, easy, medium, hard, instructions	| app informs user of the selected level or show the instructions of the game | Works as expected
+Input - Game level - valid data	| Entered in : easy, medium, hard	| app selects a word depending on the difficulty level [(check flowchart)](https://lucid.app/lucidchart/34de17b9-709a-49c4-8d79-44810d102faf/edit?viewport_loc=-776%2C-16%2C3245%2C1531%2C0_0&invitationId=inv_5ed7c721-b21a-4564-a0eb-f4a495f0d7b6) | Works as expected
+Input - guessing letters - Invalid data	| Entered in : blank space, return key, symbols, numbers	| app informs user of invalid data & prompts the user to try again | Works as expected
+Input - guessing letters - Valid data	| Entered in : letters in lower case and upper case, instructions in lower case and upper case	| app validates letter and process according to [flowchart](https://lucid.app/lucidchart/34de17b9-709a-49c4-8d79-44810d102faf/edit?viewport_loc=-776%2C-16%2C3245%2C1531%2C0_0&invitationId=inv_5ed7c721-b21a-4564-a0eb-f4a495f0d7b6) | Works as expected
+Input - Play again - Invalid data	| Entered in : blank space, return key, symbols, numbers	| app informs user of invalid data & prompts the user to try again | Works as expected
+Input - Play again - valid data	| Entered in : yes and no in upper case and lower case, instructions in lower and upper case	| app exit the system or start again depending on selection | Works as expected
 
 
 ### Unfixed Bugs
@@ -134,6 +144,7 @@ The live link can be found [HERE](https://hangman-game-diego-dd66cfc0fedc.heroku
 - Inspirational tutorial and use of code created by SAI ASHISH KONCHADA and published in [makeuseof.com](https://www.makeuseof.com/python-game-hangman-create/)
 - Filtering wordlist depending on diffculty level created by Komal Gupta and published in [favtutor.com](https://favtutor.com/blogs/filter-list-python)
 - System exit article created by Shittu Olumide and published in [freecodecamp.org](https://www.freecodecamp.org/news/python-exit-how-to-use-an-exit-function-in-python-to-stop-a-program/)
+- Color change was powered by the Colorama tool. An interesting article was created by Matteo and published in [python.plainenglish.io](https://python.plainenglish.io/colored-print-in-python-93c9bd8cd471)
 
 
 ### Media
