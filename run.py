@@ -23,7 +23,8 @@ def select_difficulty():
     Allows the player to select the difficulty level
     """
     while True:
-        choice = input(Style.NORMAL + "Write 'easy', 'medium' or 'hard' level, or 'instructions':\n")
+        choice = input(Style.NORMAL + "Write 'easy', 'medium'"
+                       ", 'hard' or 'instructions':\n")
 
         if 'easy' in choice.lower():
             print(Fore.BLUE + "You selected easy")
@@ -159,8 +160,9 @@ def run_game(word):
         if chances == 0:
             print(Fore.RED + f"Game Over! The word was: {word}")
             gameOver_check = True
-            while gameOver_check == True:
-                gameOver_choice = input(Fore.RESET + "Do you want to play again? (Write 'yes' or 'no'):\n")
+            while gameOver_check is True:
+                gameOver_choice = input(Fore.RESET + "Do you want to play"
+                                        " again? (Write 'yes' or 'no'):\n")
                 if 'yes' in gameOver_choice.lower():
                     gameOver_check = False
                     start_game()
@@ -201,8 +203,9 @@ def run_game(word):
         if '_' not in temp:
             print(Fore.GREEN + f"\nYou Won! The word was: {word}")
             gameWon_check = True
-            while gameWon_check == True:
-                gameWon_choice = input(Fore.RESET + "Do you want to play again? (Write 'yes' or 'no'):\n")
+            while gameWon_check is True:
+                gameWon_choice = input(Fore.RESET + "Do you want to play"
+                                       " again? (Write 'yes' or 'no'):\n")
                 if 'yes' in gameWon_choice.lower():
                     gameWon_check = False
                     start_game()
@@ -225,7 +228,8 @@ def check_instructions():
     """
     os.system('clear')
     print(Back.CYAN + Style.BRIGHT + "INSTRUCTIONS:")
-    print(Back.RESET + Style.NORMAL + "- The goal of the game is to guess the mysterious word")
+    print(Back.RESET + Style.NORMAL + "- The goal of the game is to guess the"
+          " mysterious word")
     print("before the man is hanged.")
     print("- Write one of the 3 difficulty levels (easy, medium or hard).")
     print("The difference is the lenght of the words.")
