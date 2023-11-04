@@ -87,8 +87,7 @@ __Color change in Hangman image__
 ## Testing
 
 ### Validator Testing 
-- Python
-  - No errors were returned when passing through the official [pep8ci validator](https://pep8ci.herokuapp.com/)  
+- Python: no errors were returned when passing through the official [pep8ci validator](https://pep8ci.herokuapp.com/)  
 
 <p align="center">
   <img src="https://github.com/diegocardenast/hangman-game/blob/main/assets/images/code-pep8ci-validation.png" alt="code-pep8ci-validation">
@@ -99,12 +98,12 @@ __Color change in Hangman image__
 **TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
 ----------|----------|----------|----------
 Input - Game level - Invalid data	| Entered in : blank space, return key, symbols, numbers	| app informs user of invalid data & prompts the user to try again | Works as expected
-Input - Game level - valid data	| Entered in : upper case, lower case, easy, medium, hard, instructions	| app informs user of the selected level or show the instructions of the game | Works as expected
-Input - Game level - valid data	| Entered in : easy, medium, hard	| app selects a word depending on the difficulty level [(check flowchart)](https://lucid.app/lucidchart/34de17b9-709a-49c4-8d79-44810d102faf/edit?viewport_loc=-776%2C-16%2C3245%2C1531%2C0_0&invitationId=inv_5ed7c721-b21a-4564-a0eb-f4a495f0d7b6) | Works as expected
+Input - Game level - Valid data	| Entered in : upper case, lower case, easy, medium, hard, instructions	| app informs user of the selected level or show the instructions of the game | Works as expected
+Input - Game level - Valid data	| Entered in : easy, medium, hard	| app selects a word depending on the difficulty level [(check flowchart)](https://lucid.app/lucidchart/34de17b9-709a-49c4-8d79-44810d102faf/edit?viewport_loc=-776%2C-16%2C3245%2C1531%2C0_0&invitationId=inv_5ed7c721-b21a-4564-a0eb-f4a495f0d7b6) | Works as expected
 Input - guessing letters - Invalid data	| Entered in : blank space, return key, symbols, numbers	| app informs user of invalid data & prompts the user to try again | Works as expected
 Input - guessing letters - Valid data	| Entered in : letters in lower case and upper case, instructions in lower case and upper case	| app validates letter and process according to [flowchart](https://lucid.app/lucidchart/34de17b9-709a-49c4-8d79-44810d102faf/edit?viewport_loc=-776%2C-16%2C3245%2C1531%2C0_0&invitationId=inv_5ed7c721-b21a-4564-a0eb-f4a495f0d7b6) | Works as expected
 Input - Play again - Invalid data	| Entered in : blank space, return key, symbols, numbers	| app informs user of invalid data & prompts the user to try again | Works as expected
-Input - Play again - valid data	| Entered in : yes and no in upper case and lower case, instructions in lower and upper case	| app exit the system or start again depending on selection | Works as expected
+Input - Play again - Valid data	| Entered in : yes and no in upper case and lower case, instructions in lower and upper case	| app exit the system or starts again depending on selection | Works as expected
 
 
 ### Unfixed Bugs
