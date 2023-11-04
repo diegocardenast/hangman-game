@@ -75,7 +75,7 @@ __Hangman image__
 
 __Color change in Hangman image__
 
-  -Using colours (thanks to the Colorama tool), the player will know how many tries he has left and if he is getting close to die by the change of colours in the hangman.
+  - Using colours (thanks to the Colorama tool), the player will know how many tries he has left and if he is getting close to die by the change of colours in the hangman.
 ![HangmanColours](https://github.com/diegocardenast/hangman-game/blob/main/assets/images/hangman-color-feature.png)
 
 
